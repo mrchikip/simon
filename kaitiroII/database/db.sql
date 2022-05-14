@@ -10,7 +10,7 @@ CREATE TABLE usuarios(
   password VARCHAR(60) NOT NULL,
   fullname VARCHAR(100) NOT NULL,
   email VARCHAR(100) NOT NULL,
-  rol INT(2) NOT NULL
+  urol INT(2) NOT NULL
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 
@@ -96,7 +96,6 @@ INSERT INTO `recurso` (`Dispositivo`, `SAP`, `Descripcion`) VALUES
 (62, 'TCR62', 'TELAR CROCHET 62');
 
 
-
 CREATE TABLE registros (
   id double NOT NULL,
   contador int(11) NOT NULL,
@@ -105,7 +104,6 @@ CREATE TABLE registros (
   dispositivo int(11) NOT NULL,
   CONSTRAINT fk_dispositivo FOREIGN KEY (dispositivo) REFERENCES recurso(Dispositivo)
 ) ENGINE=InnoDB;
-
 
 
 INSERT INTO registros (id, contador, tiempo, valor, dispositivo) VALUES
