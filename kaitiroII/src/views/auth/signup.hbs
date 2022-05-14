@@ -1,0 +1,43 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center g-3">
+                <div class="card-header">
+                    <h3>Registrarse</h3>
+                </div>
+                <div class="card-body">
+                    <img src="img/alien.png" alt="Alien Registro" class="card-img-top mx-auto m-2  w-50">
+                    <form action="/signup" method="POST">
+                        <div class="form-group mb-2">
+                            <input type="text" name="fullname" placeholder="Nombre Completo" class="form-control"
+                                autofocus>
+                        </div>
+                        <select class="form-select mb-2" name="urol">
+                            <option selected>Rol de Usuario</option>
+                            <option value="1">Administracion</option>
+                            <option value="2">Mantenimiento</option>
+                            <option value="3">Produccion</option>
+                            <option value="4">Soporte</option>
+                        </select>
+                        <div class="form-group mb-2">
+                            <input type="email" name="email" placeholder="Correo Electronico"
+                                class="form-control md-3">
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="text" name="username" placeholder="Nombre de Usuario"
+                                class="form-control md-3">
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="password" name="password" placeholder="Password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block mb-3">
+                                Registro
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

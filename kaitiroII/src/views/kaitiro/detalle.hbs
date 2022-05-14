@@ -1,0 +1,31 @@
+<div class="card border-5 border-primary text-center" style="background-color: rgb(151, 174, 224);">
+
+    <div class="card-body">
+        <h1 class="card-tittle text-uppercase font-weight-bold"><strong>
+                {{detalles.dispositivo}}
+            </strong></h1>
+        <p class="m-2">
+            <small class="text-muted">Telar Detenido</small>
+        </p>
+        {{#if detalles.valor}}
+        <p>Trabajando {{timeago detalles.tiempo}}</p>
+        {{else}}
+        <p>Detenido {{timeago detalles.tiempo}}</p>
+        {{/if}}
+        <a href="../general" class="btn btn-primary">Volver</a>
+    </div>
+</div>
+
+
+{{!--
+<h1>detalles de la maquina {{detalles.dispositivo}}</h1>
+<h3>ultima vez reportando {{timeago detalles.tiempo}}</h3>
+<h2>
+    estado de la maquina:
+    {{#if detalles.valor}}
+    trabajando
+    {{else}}
+    detenida
+    {{/if}}
+</h2>
+--}}
